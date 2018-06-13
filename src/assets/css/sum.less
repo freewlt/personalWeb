@@ -1,0 +1,47 @@
+.intro {
+  width: 55%;
+  margin: 0 auto;
+  color: #514753;
+  font-size: 30px;
+  text-align: left;
+  .title {
+    color: #514753;
+    font-size: 50px;
+  }
+  p {
+    padding-top: 40px;
+    color: #514753;
+    font-size: 30px;
+  }
+  .change {
+    display: block;
+    outline: 0;
+    color: #cf4a5c;
+    text-decoration: none;
+    transition: color .25s ease-in-out;
+    padding: 40px 0;
+    .txt {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 5px;
+      font-size: 20px;
+    }
+    .icon-expand {
+      display: inline-block;
+      vertical-align: middle;
+      width: 18px;
+      height: 18px;
+      background: url("../../assets/images/change.png");
+      background-size: 100% 100%;
+    }
+    &:hover {
+      color: #000;
+      .icon-expand {
+        width: 18px;
+        height: 18px;
+        background: url("../../assets/images/changeActive.png");
+        background-size: 100% 100%;
+      }
+    }
+  }
+}

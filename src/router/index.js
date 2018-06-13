@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from '@/components/home'
+import sum from '@/components/sum'
 
 Vue.use(Router)
 
@@ -8,8 +8,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: home
+      name: 'sum',
+      component: sum
     }
   ]
-})
+});
+
+
+
+

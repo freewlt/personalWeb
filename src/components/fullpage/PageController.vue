@@ -1,10 +1,11 @@
 <template>
     <nav class="controller">
         <!--<button v-if="option.arrowsType" class="prev-btn" :class="{moving:option.arrowsType === 'animate'}" @click="changePage(prevIndex)"></button>-->
-        <ul v-if="option.navbar">
-            <li v-for="index in pageNum" @click="changePage(index)" :class="{current:option.highlight && index === currentPage}" :key="'controller-'+index" :data-index="index" class="controller-item"></li>
-        </ul>
-        <!--<button v-if="option.arrowsType" class="next-btn" :class="{moving:option.arrowsType === 'animate'}" @click="changePage(nextIndex)"></button>-->
+        <!--<ul v-if="option.navbar">-->
+            <!--<li v-for="index in pageNum" @click="changePage(index)" :class="{current:option.highlight && index === currentPage}" :key="'controller-'+index" :data-index="index" class="controller-item"></li>-->
+        <!--</ul>-->
+        <button  class="next-btn" :class="{moving:option.arrowsType === 'animate'}" @click="changePage(nextIndex)">
+        </button>
     </nav>
 </template>
 
@@ -128,8 +129,8 @@ export default {
 }
 .controller-item {
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 5px;
+    height: 10px;
     border-radius: 50%;
     margin-top: 10px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -165,6 +166,7 @@ export default {
   transform: rotate(45deg);
   border-top-color: transparent;
   border-left-color: transparent;
+  color: #fff;
 }
 .prev-btn.moving {
   animation: prev-up-down 0.7s linear 0s infinite;
