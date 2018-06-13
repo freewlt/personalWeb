@@ -21,6 +21,7 @@
     "vue": "^2.5.2",
     "vue-clipboard2": "^0.1.1",
     "vue-fullpage": "^2.0.5",
+    "vue-i18n": "^7.8.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
